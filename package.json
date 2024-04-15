@@ -1,0 +1,23 @@
+{
+  "name": "ingsoftware-equipo-2",
+  "version": "1.0.0",
+  "description": "PMV software Meriandes reporte",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morochobrandon/IngSoftware-Equipo-2.git"
+  },
+  "author": "Brandon Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morochobrandon/IngSoftware-Equipo-2/issues"
+  },
+  "homepage": "https://github.com/morochobrandon/IngSoftware-Equipo-2#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
