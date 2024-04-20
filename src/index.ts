@@ -5,10 +5,10 @@ app.use(express.json()) // middleware que transforma la req.body a un json
 const PORT = 3000
 
 app.get('/ping',(_req,res)=>{
-  console.log('someone pinged here!!')
+  console.log('puerto escuchando!!')
   res.send('pong')
 })
 
 app.listen(PORT,()=>{
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Servidor corriendo en puerto: ${PORT}`);
 })
