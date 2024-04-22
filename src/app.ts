@@ -7,15 +7,18 @@ import productRoutes from './routes/products.routes'
 const app = express()
 
 app.set('port',process.env.PORT||3000)
-
+/* 
 app.get('/ping',(_req,res)=>{
   console.log('puerto escuchando!!' + new Date().toLocaleDateString())
   res.send('pong')
 })
+*/
+
+
 
 app.use(cors())
 app.use(morgan('dev'))
-app.use(express.json())// middleware que transforma la req.body a un json
+app.use(express.json())
 app.use(productRoutes)
 export default app
 /*
