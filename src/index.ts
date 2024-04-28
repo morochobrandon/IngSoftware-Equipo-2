@@ -1,8 +1,7 @@
 import app from './app'
 import express from 'express'
-
 import path from 'path';
-
+import { methods as authentication} from './controllers/authorization.controllers';
 
 //server
 app.listen(app.get('port'), () => {// corriendo el puerto
@@ -16,6 +15,7 @@ app.use(express.static(path.join(__dirname, 'app/public')));
 //res:respuesta
 app.get("/",(req,res)=>res.sendFile(path.join(__dirname, '/app/pages/login.html')))
 app.get("/register",(req,res)=>res.sendFile(path.join(__dirname, '/app/pages/register.html')))
-app.get('/admin', (req, res) =>
-  res.sendFile(__dirname + '/app/pages/admin/admin.html')
-);
+app.get("/admin", (req, res) =>res.sendFile(__dirname + '/app/pages/admin/admin.html'));
+app.post('/api/login', authentication.login);
+app.post("/api/register",authentication.register)
+
