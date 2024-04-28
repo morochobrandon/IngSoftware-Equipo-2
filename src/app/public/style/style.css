@@ -25,13 +25,6 @@ html { /*  https://css-pattern.com/ fondos bellos */
     min-height: 100svh;
     font-size: larger;
   }
-
-  .imagen{
-    /*
-    width: 200px;
-    height: 100px;
-    */
-  }
   
   .form-container{
     width: 500px;
@@ -80,4 +73,11 @@ html { /*  https://css-pattern.com/ fondos bellos */
     width:1px;
     height:1px;
     overflow:hidden;
+  }
+
+  .imagen{
+    /*
+    width: 200px;
+    height: 100px;
+    */
   }

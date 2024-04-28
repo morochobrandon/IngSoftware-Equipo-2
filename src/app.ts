@@ -4,10 +4,10 @@ import morgan from 'morgan'
 
 import productRoutes from './routes/products.routes'
 
-const app = express()
+const app = express() // cargamos unas instancia de express
 
-app.set('port',process.env.PORT||3000)
-/* 
+app.set('port',process.env.PORT||3000) // puerto que vamos a usar
+/*
 app.get('/ping',(_req,res)=>{
   console.log('puerto escuchando!!' + new Date().toLocaleDateString())
   res.send('pong')
