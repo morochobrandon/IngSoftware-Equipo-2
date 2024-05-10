@@ -1,6 +1,6 @@
-const mensajeError = document.getElementsByClassName("error")[0]
+const mensajeError = document.getElementsByClassName("error")[0];
 
-document.getElementById("login-form").addEventListener("submit",async (e)=>{
+document.getElementById("login-form").addEventListener("submit", async (e) => {
   e.preventDefault();
   // asi obtenemos los datos del formulario
   const user = e.target.children.user.value; //el valor que tiene el user que es hijo que tiene el fomulario
@@ -20,4 +20,4 @@ document.getElementById("login-form").addEventListener("submit",async (e)=>{
   if (resJson.redirect) {
     window.location.href = resJson.redirect;
   }
-})
+});
